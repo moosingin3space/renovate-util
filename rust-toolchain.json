@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "jsonata",
+      "fileFormat": "toml",
+      "managerFilePatterns": ["rust-toolchain.toml"],
+      "matchStrings": ["{ 'currentValue': $.toolchain.channel }"],
+      "datasourceTemplate": "github-releases",
+      "packageNameTemplate": "rust-lang/rust",
+      "depNameTemplate": "rust",
+      "versioningTemplate": "semver"
+    }
+  ]
+}
