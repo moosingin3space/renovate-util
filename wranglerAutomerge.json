@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackageNames": ["wrangler"],
+      "allowedVersions": ">=4 <5",
+      "automerge": true
+    }
+  ]
+}
